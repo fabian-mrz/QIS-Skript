@@ -1,0 +1,6 @@
+
+.env
+current_table.html
+previous_table.html
+/node_modules
+.DS_Store
