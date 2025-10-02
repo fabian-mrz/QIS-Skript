@@ -68,10 +68,10 @@ def open_google():
     options.headless = True
     # Uncomment the following line if you want to run headless in linux server and comment the second driver line
 
-    #service = Service("/usr/bin/chromedriver")  # Specify the path to the ChromeDriver binary
-    #driver = webdriver.Chrome(service=service, options=options)
+    service = Service("/usr/bin/chromedriver")  # Specify the path to the ChromeDriver binary
+    driver = webdriver.Chrome(service=service, options=options)
 
-    driver = webdriver.Chrome(options=options)
+
     try:
         driver.get('https://qis.hs-albsig.de/')
         sleep(1000)
